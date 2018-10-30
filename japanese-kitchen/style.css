@@ -1,0 +1,170 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: sans-serif;
+    background: url(images/dark-wood.jpg);
+    color: black;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+    display: block;
+}
+
+header {
+    background: url(images/header-page.jpg);
+    height: 130px;
+}
+
+header h1 {
+    float: right;
+    font-size: 3.0rem;
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+nav {
+    background: url(images/header-page.jpg);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 6px;
+    margin-bottom: 7px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+main {
+    background-color: #ffffff;
+    height: 700px;
+}
+
+.courses {
+    float: left;
+    border-right: 1px solid #A19E99;
+    width: 70%;
+}
+
+.popular-recipes {
+    float: right;
+    width: 25%;
+}
+
+.courses figure {
+    border: 1px solid #A19E99;
+    width: 300px;
+    margin: 20px;
+}
+
+.courses figure img {
+    margin: 5px;
+}
+
+.courses figure figcaption {
+    margin: 5px;
+    color: #84818B;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.courses article div {
+    margin-left: 20px;
+}
+
+.courses article div h2 {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.courses article div h3 {
+    color: #E8CE85;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.courses article p {
+    margin: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #92979C;
+}
+
+.courses article:nth-child(2) figure{
+    float: left;
+}
+
+.courses article:nth-child(2) div, .courses article:nth-child(2) p {
+    margin-top: 20px;
+    width: 250px;
+    float: left;
+}
+
+footer {
+    clear: both;
+    background-color: #A19E99;
+    height: 50px;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
