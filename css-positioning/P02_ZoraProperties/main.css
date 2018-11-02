@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url(&#39;https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&#39;);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f3f5f7;
+    color: #b1bfc6;
+    margin: 0;
+    padding: 0;
+}
+
+* { padding: 0; margin: 0; }
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+}
+
+aside {
+    width:15%;
+    height: 100%;
+    background-color: #ffffff;
+    float: left;
+}
+
+aside h1 {
+    font-family: Comfortaa;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 0;
+    color: #000000;
+}
+
+aside nav img {
+    width: 60%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+aside nav .profile-name {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+aside nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside nav ul li {
+    padding: 12px;
+
+}
+
+aside nav ul li:hover { 
+    padding-left: 18px;
+    border-left: 2px solid #FF7739;
+}
+
+aside nav ul li a:hover {
+    color: #3F4744;
+}
+
+main {
+    background-color: #F4F5F7;
+    margin-left: 270px;
+    margin-bottom: 50px;
+}
+
+main .properties {
+    display: block;
+    padding: 50px 70px 40px 0px;
+}
+
+main .properties h2 {
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #3F4744;
+}
+
+main .properties span {
+    color: #B9C5CB;
+}
+
+main .properties button {
+    float: right;
+}
+
+main .addresses {
+    padding: 30px 30px 30px 0px;
+    font-size: 0.8rem;
+}
+
+main .addresses p:first-child {
+    color: #000000;
+    margin-bottom: 7px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+main .addresses p:last-child {
+    color: #000000;
+    text-transform: uppercase;
+}
+
+main section {
+    display: inline-block;
+    padding: 40px 0px 40px 0px;
+    background-color: #ffffff;
+    margin-right: 20px;
+    width: 28%;
+    box-shadow: 8px 6px 17px -1px rgba(0,0,0,0.26);
+}
+
+main section img { 
+    width: 100%;
+}
+
+main section button {
+    display: block;
+    position: relative;
+    top: 40px;
+    right: 10px;
+}
+
+.properties button {
+    float: right;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid #FF7739;
+    background-color: #FF7739;
+    padding: 8px 18px;
+    border-radius: 20px;
+    color: #F4F5F7;
+}
+
+.properties button:hover {
+    background: none;
+    cursor: pointer;
+    color: #FF7739;
+}
+
+section button {
+    width: 90px;
+    height: 30px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    top: 50px;
+    left: -15px;
+}
+
+.listed {
+    background-color: #68BB69;
+}
+
+.draft {
+    background-color: #91A5AE
+}
+
+.rented {
+    background-color: #B9C5CB;
+}
