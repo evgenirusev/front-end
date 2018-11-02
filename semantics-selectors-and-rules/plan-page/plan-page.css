@@ -15,7 +15,7 @@ body {
 main {
     background-color: #2D3154;
     border-radius: 20px;
-    margin: auto;
+    margin: 0 auto;
     width: 75%;
     height: 700px;
     margin-top: 40px;
@@ -27,7 +27,7 @@ main {
 
 .plan-types ul li {
     display: inline-block;
-    width: 310px;
+    width: 280px;
     height: 350px;
     background-color: #ffffff;
     margin: 10px;
