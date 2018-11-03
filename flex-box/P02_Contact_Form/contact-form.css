@@ -46,7 +46,7 @@ h1 {
 
 input, textarea {
     border-radius: 0 5px 5px 0;
-    border: 1px solid #eee;
+    border: 1px solid black;
     padding: 5px 8px;
     width: calc(100% - 40px);
     box-sizing: border-box;
@@ -113,10 +113,25 @@ i {
 
 
 
-/*TODO: @media all and (max-width: 800px) {*/
+@media all and (max-width: 800px) {
+    form {
+        width: calc(100% - 40px);
+    }
+}
 
-/*}*/
+@media all and (max-width: 660px) {
+    form {
+        width: 100% - 40px;
+        display: flex;
+        flex-direction: column;
+    }
 
-/*TODO: @media all and (max-width: 660px) {*/
+    .right-contact, .left-contact {
+        padding: 0;
+        width: 100%;
+    }
 
-/*}*/
+    form .form-group input {
+        flex: 1 0;
+    }
+}
