@@ -112,10 +112,50 @@ a:hover#menu-icon {
     justify-content: space-between;
 }
 
+@media all and (max-width: 880px) {
 
+    #menu-icon {
+        display: block;
+    }
 
+    ul.top-list {
+        display: none;
+    }
 
+    nav ul li {
+        padding: 10px;
+    }
 
-/*TODO: @media all and (max-width: 880px) {*/
+    nav:hover ul.top-list {
+        background-color: #F6F6F6;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
 
-/*}*/
+    header .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .buttons a {
+        margin: 8px;
+        width: auto;
+    }
+
+    main .business {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .business article {
+        text-align: center;
+    }
+
+    article p {
+        max-width: 100%;
+    }
+
+}
