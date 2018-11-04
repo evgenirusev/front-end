@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Responsive CV</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+<div id="wrapper" itemscope itemtype="http://schema.org/Person">
+    <header class="clearfix">
+        <div id="info">
+            <h1><span itemprop="name">DJ Evgeni Rusev</span></h1>
+            <h3><span itemprop="jobTitle">Freelance Front-End &amp; Web Developer</span></h3>
+            <small itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="addressLocality">Sofia</span>,
+                <span itemprop="addressCountry">Bulgaria</span>
+            </small>
+            <small><span itemprop="email">bayivan@gmail.com</span></small>
+            <small><a href="http://rusev.net" itemprop="url">Portfolio</a> &bull; <a href="http://twitter.com/rusev"
+                                                                                       itemprop="url">Twitter:
+                @rusev</a></small>
+        </div>
+
+        <div id="photo">
+            <img src="img/Rusev.png" alt="Evgeni Rusev - photo" itemprop="image"/>
+        </div>
+    </header>
+
+    <section id="profile">
+        <h2>About Me</h2>
+        <p itemprop="description">I'm a 19 year old Web developer from Sofia. I am the best front-end developer on planet Earth.</p>
+
+        <p>I am working as freelancer. I can ride a skateboard, code in HTML and CSS and create dynamic websites.</p>
+    </section>
+
+    <h2 itemprop="name">Skils</h2>
+    <section id="skills" class="clearfix" itemscope itemtype="http://schema.org/ItemList">
+        <section id="skills-left">
+            <h4 itemprop="about">Development</h4>
+            <ul>
+                <li itemprop="itemListElement">HTML</li>
+                <li itemprop="itemListElement">CSS</li>
+                <li itemprop="itemListElement">JavaScript</li>
+                <li itemprop="itemListElement">jQuery</li>
+                <li itemprop="itemListElement">Bootstrap</li>
+                <li itemprop="itemListElement">WordPress</li>
+                <li itemprop="itemListElement">CMS</li>
+                <li itemprop="itemListElement">Java</li>
+                <li itemprop="itemListElement">PHP</li>
+            </ul>
+        </section>
+
+        <section id="skills-right">
+            <h4 itemprop="about">Software</h4>
+            <ul>
+                <li itemprop="itemListElement">Paint.NET</li>
+                <li itemprop="itemListElement">Adobe Photoshop</li>
+                <li itemprop="itemListElement">Notepad++</li>
+                <li itemprop="itemListElement">WordPress</li>
+                <li itemprop="itemListElement">Joomla</li>
+            </ul>
+        </section>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><span itemprop="alumniOf">Technical University of Dubai</span>, graduate of 2012.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <p>Software Developer - Bulgarian Academy of Sciences ~ 2010 - 2015</p>
+        <p>Freelance Developer for <span itemprop="worksFor">evgeni.com</span> ~ 2010-Present</p>
+    </section>
+
+    <section id="articles">
+        <h2>Languages</h2>
+        <p>English</p>
+        <p>Russian</p>
+        <p>Bulgarian</p>
+    </section>
+
+</div>
+</body>
+</html>
