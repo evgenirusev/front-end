@@ -1,1 +1,55 @@
-/*TODO*/
+@media screen and (max-width: 980px) {
+	header {
+		height: 170px;
+	}
+
+	header nav {
+		margin: 0;
+		padding: 0;
+		display: block;
+		float: none;
+	}
+
+	header nav ul {
+		text-align: center;
+		margin: 0px;
+	}
+
+	header nav ul li {
+		padding: 12px;
+	}
+
+	header img {
+		position: absolute;
+		top: 50px;
+		left: calc(50% - 50px);
+	}
+
+	.content div {
+		width: 45%;
+	}
+
+	footer .row {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	header img {
+		display: none;
+	}
+
+	header nav ul li {
+		border-top: 1px solid #ffffff;
+		padding: 12px;
+		width: 100%;
+	}
+
+	.slider {
+		margin-top: 60px;
+	}
+
+	.content div {
+		width: 100%;
+	}
+}
