@@ -1,0 +1,59 @@
+﻿@media screen and (max-width: 1000px) {
+
+    header {
+        height: auto;
+    }
+
+    header #logoarea {
+        width: 100%;
+    }
+
+    header #header-area-right {
+        float: none;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    header #header-area-right #search-form {
+        width:50%;
+        float: none;
+        margin-top: 10px;
+    }
+
+    header #header-area-right #menu {
+        margin: 0 auto;
+        float: none;
+    }
+
+
+    body {
+        min-width: 0px;
+    }
+
+    #wrapper {
+        height: auto;
+        width: 100%;
+    }
+
+    section.contentblock {
+        min-width: 0px;
+    }
+
+    #publicphotos {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #publicphotos h1 {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    #p-albums-items {
+        justify-content: center;
+    }
+
+    footer {
+        min-width: 0;
+    }
+}
