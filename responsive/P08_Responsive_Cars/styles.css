@@ -1,0 +1,165 @@
+body {
+	background-color: #999999;
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	background-color: #3f3f3f;
+	margin: 0 auto;
+}
+
+.head-wrapper {
+	max-width: 946px;
+	margin: 0 auto;
+}
+
+header img {
+	width: 100px;
+	padding: 20px 0px 20px 0px;
+}
+
+nav {
+	float: right;
+	padding: 12px;
+}
+
+header nav ul {
+	padding: 0px;
+	background-color: #333333;
+	--padding: 25px 25px 25px 25px;
+}
+
+header nav ul li {
+	display: inline-block;
+	padding: 20px;
+}
+
+nav ul li:hover {
+    background: #DA251D;
+}
+
+header nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #D9D9DB;
+}
+
+.main-wrapper {
+	max-width: 946px;
+	margin: 0 auto;
+}
+
+.slider {
+	display: block;
+	background-color: #333333;
+	margin: 30px 0px 30px 0;
+	padding: 10px;
+}
+
+.content {
+	width: 100%;
+	background-color: #ffffff;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.content div {
+	width: 22%;
+	padding: 10px;
+	display: inline-block;
+}
+
+.content div img {
+	width: 100%;
+	border: 5px solid #CCCCCC;
+}
+
+.content a {
+	display: inline-block;
+    text-decoration: none;
+	padding: 6px 12px 6px 12px;
+	cursor: pointer;
+    color: #ffffff;
+    line-height: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background: #3F3F3F;
+}
+
+footer {
+	background-color: #333333;
+	width: 100%;
+	color: #ffffff;
+}
+
+footer .footer-wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+footer .heading {
+	border-bottom: 5px solid #ffffff;
+}
+
+footer .row {
+	width: 333px;
+	padding: 20px;
+}
+
+@media screen and (max-width: 980px) {
+	header {
+		height: 170px;
+	}
+
+	header nav {
+		margin: 0;
+		padding: 0;
+		display: block;
+		float: none;
+	}
+
+	header nav ul {
+		text-align: center;
+		margin: 0px;
+	}
+
+	header nav ul li {
+		padding: 12px;
+	}
+
+	header img {
+		position: absolute;
+		top: 50px;
+		left: calc(50% - 50px);
+	}
+
+	.content div {
+		width: 46%;
+	}
+
+	footer .row {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	header img {
+		display: none;
+	}
+
+	header nav ul li {
+		border-top: 1px solid #ffffff;
+		padding: 12px;
+		width: 100%;
+	}
+
+	.slider {
+		margin-top: 60px;
+	}
+
+	.content div {
+		width: 100%;
+	}
+}
