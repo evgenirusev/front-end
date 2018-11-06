@@ -13,23 +13,35 @@ body .wrapper {
 
 .title {
     display: flex;
-
     order: 0;
+    background-color: royalblue;
     margin-bottom: 30px;
     width: 100%;
     height: 150px;
-    border: 2px solid tomato;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header-content {
+  width: 100%;
+}
+
+.title h1 {
+  flex: 1 100%;
 }
 
 section {
     order: 1;
-    border: 2px solid steelblue;
+    background-color: #7B68EE;
     flex-basis: 65%;
     padding: 20px;
 }
 
 section article {
-    border: 3px solid maroon;
+    border: 3px solid  #ffffff;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 5px;
 }
 
 aside {
@@ -38,7 +50,6 @@ aside {
 
     flex-basis: 28%;
     order: 2;
-    border: 2px solid lime;
 }
 
 aside div {
