@@ -1,0 +1,46 @@
+@media all and (max-width: 1028px) {
+    #main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 98%;
+    }
+
+    aside img {
+        width:215px;
+        height:225px;
+        border-radius: 50%;
+        margin-left: 25%;
+    }
+
+    #personal-info {
+        display: inline-block;
+    }
+
+    aside .inner-progress-bar {
+        color: #009688;
+    }
+
+    main {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 576px) {
+    #work, aside, #education {
+        width: 84%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    aside img {
+        width:215px;
+        height:225px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+}
