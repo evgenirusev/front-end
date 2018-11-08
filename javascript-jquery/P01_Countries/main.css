@@ -1,0 +1,35 @@
+table {
+    text-align: center;
+    background-color: cornflowerblue;
+    color: #FFFFFF;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+button {
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.create-button {
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+}
