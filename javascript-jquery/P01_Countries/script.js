@@ -15,16 +15,25 @@ let buttonManager = {
         $table.children()[0].removeChild(rowToDelete);
     },
 
-    upTrigger: function(element) {
-        //TODO
+    downTrigger: function(element) {
+        let currentRow = element.parentNode.parentNode;
+        let lowerRow = currentRow.nextElementSibling;
+
+        (lowerRow != null && currentRow != null) ? currentRow.before(lowerRow) : null;
     },
 
-    downTrigger: function(element) {
-        //TODO
+    upTrigger: function(element) {
+        let currentRow = element.parentNode.parentNode;
+        let lowerRow = currentRow.previousElementSibling;
+        console.log(currentRow);
+        console.log(lowerRow);
+        (lowerRow != null && currentRow != null) ? currentRow.after(lowerRow) : null;
     },
 };
 
 $table.on('click', (event) => {
     let buttonType = event.target.className;
+
+    // Class name of the clicked button gets mapped to method name in buttonManager
     (event.target.tagName == 'BUTTON') ? eval(`buttonManager.${buttonType}(event.target)`) : null;
 });
