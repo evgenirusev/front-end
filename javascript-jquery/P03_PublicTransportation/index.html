@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Manager</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+    <table>
+        <caption>{Town name}'s Public Transport</caption>
+        <thead>
+            <tr>
+                <th class="type">Type</th>
+                <th class="name">Name</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td><input name="type" type="text"></td>
+                <td><input name="name" type="text"></td>
+                <td>
+                    <button class="search-btn">Search</button>
+                    <button class="clear-btn">Clear</button>
+                </td>
+            </tr>
+        </thead>
+        <tbody class="vehicles-info"></tbody>
+    </table>
+
+    <script src="./table-handler.js"></script>
+    <script src="./transport-generator.js"></script>
+</body>
+
+</html>
