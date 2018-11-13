@@ -36,29 +36,17 @@ class PublicTransportTable {
             let nameInput = $('td input')[1].value;
             let tableElements = jQuery.makeArray($('.vehicles-info').children());
 
-            if (typeInput) {
+            if (typeInput || nameInput) {
                 tableElements.forEach(element => {
-                    let typeName = element.firstChild.textContent
-                    if (typeName.includes(typeInput)) {
+                    let typeName = element.firstChild.textContent;
+                    let transportNumber = element.children[1].textContent;
+                    if (typeName.includes(typeInput) && transportNumber.includes(nameInput)) {
                         element.style.display = '';
                     } else {
                         element.style.display = 'none';
                     }
                 });
             }
-
-            if (nameInput) {
-                tableElements.forEach(element => {
-
-                    let transportNumber = element.children[1].textContent
-                    if (transportNumber.includes(nameInput)) {
-                        element.style.display = '';
-                    } else {
-                        element.style.display = 'none';
-                    }
-                });
-            }
-
         })
     }
 }
