@@ -1,8 +1,7 @@
 class PublicTransportTable {
     constructor(townName) {
         this.updateHeaderName(townName);
-        // TODO: implement SEARCH and CLEAR buttons
-        // this.addEventHandlers();
+        this.addEventHandlers();
     }
 
     updateHeaderName(townName) {
@@ -29,5 +28,24 @@ class PublicTransportTable {
         td.append(button);
         tr.append(td);
         $('.vehicles-info').append(tr);
+    }
+
+    addEventHandlers() {
+        $('.search-btn').on('click', function() {
+            let typeInput = $('td input')[0].value;
+            let nameInput = $('td input')[1].value;
+
+            if (typeInput) {
+                jQuery.makeArray($('.vehicles-info').children()).forEach(element => {
+                    let typeName = element.firstChild.textContent
+                    if (typeName.includes(typeInput)) {
+                        element.style.display = '';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                });
+            }
+
+        })
     }
 }
