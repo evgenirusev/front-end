@@ -48,5 +48,17 @@ class PublicTransportTable {
                 });
             }
         })
+
+        $('.clear-btn').on('click', function() {
+            // TODO: refactor
+            let tableElements = jQuery.makeArray($('.vehicles-info').children());
+            let typeInput = $('td input')[0].value;
+            let nameInput = $('td input')[1].value;
+            nameInput = '';
+            typeInput = '';
+            tableElements.forEach(element => {
+                element.style.display = '';
+            });
+        })
     }
 }
