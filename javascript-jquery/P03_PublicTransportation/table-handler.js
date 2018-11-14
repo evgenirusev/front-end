@@ -34,9 +34,9 @@ class PublicTransportTable {
         $('.search-btn').on('click', function() {
             let typeInput = $('td input')[0].value;
             let nameInput = $('td input')[1].value;
-            let tableElements = jQuery.makeArray($('.vehicles-info').children());
-
+            
             if (typeInput || nameInput) {
+                let tableElements = jQuery.makeArray($('.vehicles-info').not('.more-info').children());
                 tableElements.forEach(element => {
                     let typeName = element.firstChild.textContent;
                     let transportNumber = element.children[1].textContent;
@@ -49,16 +49,13 @@ class PublicTransportTable {
             }
         })
 
-        $('.clear-btn').on('click', function() {
-            // TODO: refactor
-            let tableElements = jQuery.makeArray($('.vehicles-info').children());
-            let typeInput = $('td input')[0].value;
-            let nameInput = $('td input')[1].value;
-            nameInput = '';
-            typeInput = '';
-            tableElements.forEach(element => {
-                element.style.display = '';
-            });
+        $('.clear-btn').on('click', function () {
+            $('input[name="type"]').val('')
+            $('input[name="name"]').val('')
+            let rows = $('.vehicles-info > tr')
+            for (let i = 0; i < rows.length; i++) {
+                $(rows[i]).css('display', '')
+            }
         })
     }
 }
