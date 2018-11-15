@@ -35,8 +35,18 @@
 
     <script>
         function sort(colIndex, descending) {
-            
+            if (colIndex == 0) {
+                var td = $('#products tr td:even');
+            } else {
+                td = $('#products tr td:odd');
+            }
+            let valuesToCompare = td.map(y => td[y].innerHTML).toArray()
+            let sortedValues = descending ? valuesToCompare.sort().reverse() : valuesToCompare.sort();
+            td.toArray().forEach(function (value, i) {
+                value.textContent = sortedValues[i]
+            });
         }
     </script>
 </body>
+
 </html>
