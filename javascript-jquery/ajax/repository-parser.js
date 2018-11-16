@@ -1,10 +1,29 @@
 function loadRepos() {
-    let req = new XMLHttpRequest();
-    req.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200)
-            document.getElementById("res").textContent =
-                this.responseText;
-    };
-    req.open("GET", "https://api.github.com/users/rusev9/repos", true);
-    req.send();
+    $("#repos").empty();
+    let url = "https://api.github.com/users/" + $("#username").val() + "/repos";
+
+    $.ajax({
+
+        url,
+
+        success: function (result) {
+            displayRepos(result);
+        },
+
+        error: function (err) {
+            displayError(err);
+        }
+    })
+}
+
+function displayRepos(repos) {
+    for (let repo of repos) {
+        let link = $('<a>').text(repo.full_name);
+        link.attr('href', repo.html_url);
+        $("#repos").append($('<li>').append(link));
+    }
+}
+
+function displayError(err) {
+    $("#repos").append($("<li>Error</li>"));
 }
