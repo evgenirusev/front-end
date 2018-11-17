@@ -17,6 +17,7 @@ function loadRepos() {
 }
 
 function displayRepos(repos) {
+    console.log(repos)
     for (let repo of repos) {
         let link = $('<a>').text(repo.full_name);
         link.attr('href', repo.html_url);
