@@ -43,7 +43,24 @@ $( document ).ready(function() {
             let result = $('<li>');
             result.text(person + ': ' + phone + ' ');
             $('#parsed-results').append(result);
+
+            let deleteBtn = $("<button>Delete</button>");
+            deleteBtn.on('click', () => {
+                deleteContact(key);
+            });
+
+            result.append(deleteBtn);
         }
+    }
+
+    function deleteContact(key) {
+        let deleteRequestUrl = 'https://fir-app-dd3a7.firebaseio.com/phone-book/contacts/' + key + '.json';
+        $.ajax({
+            url: deleteRequestUrl,
+            type: 'DELETE',
+            success: loadResult,
+            error: handleError
+        })
     }
 
     function handleError() {
