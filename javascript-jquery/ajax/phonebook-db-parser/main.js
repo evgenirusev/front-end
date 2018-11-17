@@ -8,7 +8,11 @@ $( document ).ready(function() {
            url: contactsURL,
            success: function (response) {
                displayResults(response);
-           }
+           },
+           
+        error: function () {
+            handleError();
+        }
        }); 
     }
 
@@ -20,5 +24,10 @@ $( document ).ready(function() {
             result.text(person + ': ' + phone + ' ');
             $('#parsed-results').append(result);
         }
+    }
+
+    function handleError() {
+        $('#parsed-results').append("Invalid Request. Please Try Again Later.");
+        alert("Invalid Request");
     }
 });
