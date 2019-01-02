@@ -13,21 +13,13 @@ html, body {
     height: 50px;
 }
 
-.slider {
-    display: grid;
-    height: 100%;
-}
-
 .slider img {
     width: 100%;
-    min-height: 100vh;
-    margin: auto;
 }
 
 .sub-header {
     text-align: center;
     color: #FFFFFF;
-    padding: 20px;
     background: url("/img/certificate_img.jpg");
     background-attachment: fixed;
 }
@@ -35,7 +27,7 @@ html, body {
 .sub-header h2 {
     font-family: "Arial Black", Gadget, sans-serif;
     letter-spacing: 1.5px;
-    font-size: 30px;
+    font-size: 2.0rem;
     font-weight: 700;
 }
 
@@ -52,9 +44,8 @@ html, body {
     text-shadow: 1px 1px 1px grey, 1px 1px 1px grey, 1px 1px 1px grey, 1px 1px 1px grey;
 }
 
-.slick-slide.slick-current.slick-active {
-    background: black;
-    opacity: 1;
+ol li {
+    margin-bottom: 50px;
 }
 
 .tutorial {
@@ -66,9 +57,23 @@ html, body {
 
 .tutorial .tutorial-title h3 {
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 26px;
+    font-size: 55px;
+    text-align: center;
 }
 
 .tutorial .tutorial-steps {
+    font-size: 1.8rem;
+}
+
+.register-link {
     font-size: 1.4rem;
+    background-color: #E96A0A!important;
+}
+
+.register-link:hover {
+    color: #cce6ff;
+}
+
+.details-button-text {
+    font-size: 2rem;
 }
