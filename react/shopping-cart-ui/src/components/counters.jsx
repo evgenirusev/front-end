@@ -11,8 +11,9 @@ class Counters extends Component {
     ]
   };
 
-  onDelete = () => {
-    console.log("Delete Event Toggled!");
+  onDelete = id => {
+    const counters = this.state.counters.filter(c => c.id !== id);
+    this.setState({ counters });
   };
 
   render() {
@@ -22,7 +23,7 @@ class Counters extends Component {
           <Counter
             key={counter.id}
             onDelete={this.onDelete}
-            value={counter.value}
+            counter={counter}
           />
         ))}
       </div>
