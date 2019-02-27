@@ -11,11 +11,19 @@ class Counters extends Component {
     ]
   };
 
+  onDelete = () => {
+    console.log("Delete Event Toggled!");
+  };
+
   render() {
     return (
       <div>
         {this.state.counters.map(counter => (
-          <Counter key={counter.id} value={counter.value} />
+          <Counter
+            key={counter.id}
+            onDelete={this.onDelete}
+            value={counter.value}
+          />
         ))}
       </div>
     );
