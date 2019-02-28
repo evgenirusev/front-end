@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Counter from "./counter";
-import { debug } from "util";
 
 class Counters extends Component {
   state = {
@@ -9,9 +8,7 @@ class Counters extends Component {
       { id: 2, value: 55 },
       { id: 3, value: 0 },
       { id: 4, value: 7 }
-    ],
-
-    DEBUG: ["q", "a"]
+    ]
   };
 
   onDelete = id => {
@@ -20,7 +17,6 @@ class Counters extends Component {
   };
 
   handleIncrement = counter => {
-    debugger;
     const counters = [...this.state.counters];
     const index = counters.indexOf(counter);
     counters[index] = { ...counter };
@@ -28,9 +24,23 @@ class Counters extends Component {
     this.setState({ counters });
   };
 
+  handleReset = () => {
+    const counters = this.state.counters.map(c => {
+      c.value = 0;
+      return c;
+    });
+    this.setState({ counters });
+  };
+
   render() {
     return (
       <div>
+        <button
+          onClick={this.handleReset}
+          className="btn btn-primary btn-md m-2"
+        >
+          Reset
+        </button>
         {this.state.counters.map(counter => (
           <Counter
             key={counter.id}
