@@ -46,6 +46,7 @@ export class App extends Component {
       c.value = 0;
       return c;
     });
+
     this.setState({ counters });
   };
 }
