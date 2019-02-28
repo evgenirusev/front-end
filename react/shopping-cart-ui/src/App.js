@@ -16,7 +16,7 @@ export class App extends Component {
     return (
       <React.Fragment>
         <Navbar
-          totalCounters={this.state.counters.map(c => c.value > 0).length}
+          totalCounters={this.state.counters.filter(c => c.value > 0).length}
         />
         <Counters
           onDelete={this.onDelete}
